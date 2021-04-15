@@ -1,83 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
 /* Variable CSS */
 :root{
     --first-color: rgb(252, 130, 151);
 }
+
 .carousel-inner img{
+    
     width: 100%;
+    
     height: 100vh;
+
 }
+
 *{
     margin: 0;
+    
     padding: 0;
-    box-sizing: border-box;
+    
+    /* box-sizing: border-box; */
+    
     font-family: 'Poppins', sans-serif;
+}
+
+/* === Base ==== */
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body{
     background-color: rgb(253, 227, 231);
+    
     min-height: 200vh;
 }
 
 
 /* === Header/Navbar CSS === */
-/* header{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 40px 100px;
-    z-index: 9999999;
-}
-
-header.sticky{
-    position: fixed;
-    padding: 20px 60px;
-    background-color: pink;
-}
-
-header .logo{
-    position: relative;
-    font-weight: 700;
-    color: var(--first-color);
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li{
-    position: relative;
-    list-style: none;
-}
-
-header ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: var(--first-color);
-    letter-spacing: 1px;
-    font-weight: 500px;
-    transition: 0.6s;
-}
-
-.banner{
-    position: relative;
-    width: 100%;
-    background-size: cover;
-} */
-
 header{
     position: relative;
     top: 0;
@@ -86,28 +47,29 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.6s;
-    padding: 40px 100px;
+    padding: 20px 60px;
+    margin-bottom: 20px;
     z-index: 999999;
-    background-color: transparent;
+    background-color: #fff;
+    transition: 0.6s ease;
 }
 
 header.sticky{
     position: fixed;
-    padding: 20px 60px;
+    padding: 10px 30px;
     background-color: rgb(253, 226, 230);
-    transition: 0.5s ease;
+    transition: 0.6s ease;
 }
 
 header .logo{
     position: relative;
     font-weight: 700;
-    color: pink;
+    color: rgb(255, 97, 124);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.6s;
+    transition: 0.6s ease;
 }
 
 header ul{
@@ -128,10 +90,16 @@ header ul li a{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: rgb(255, 126, 148);
-    letter-spacing: 2px;
-    font-weight: 500px;
+    color: rgb(255, 154, 171);
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
     transition: 0.5s;
+}
+
+header ul li a:hover{
+    text-decoration: none;
+    color: rgb(255, 89, 117);
+    transition: 0.5s ease;
 }
 
 header.sticky ul li a{
@@ -143,48 +111,25 @@ header.sticky .logo{
     color: rgb(255, 97, 124);
 }
 
-
-/* === Header CSS === */
-
-/* ======== Scroll bar CSS ======= */
-
-::-webkit-scrollbar{
-    width: 8px;
-  }
-  ::-webkit-scrollbar-track{
-    background: transparent;
-    border-radius: 0px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background-color: var(--first-color);
-    border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-track-piece:vertical:end{
-    background: transparent;
-  }
-
-/* ======== Scroll bar CSS End ======= */
-
+/* .banner .img__logo img{
+    width: 50%;
+    height: 100px;
+} */
 
 /* ========= Dropdown CSS ======== */
-/* Dropdown Button */
 .dropbtn {
     background-color: transparent;
     color: var(--first-color);
-    padding: 16px;
+    /* padding: 16px; */
     font-size: 16px;
     border: none;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -194,7 +139,6 @@ header.sticky .logo{
     z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -202,20 +146,68 @@ header.sticky .logo{
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: transparent;
     text-decoration: none;
     cursor: pointer;
 }
 /* ========= Dropdown CSS End ======== */
+
+/* ============================= Header CSS END =============================== */
+
+/* ======== Scroll bar CSS ======= */
+
+::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 0px;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: url('assets/img/1.jpg');
+    background-color: var(--first-color);
+    border-radius: 8px;
+}
+  
+::-webkit-scrollbar-track-piece:vertical:end{
+    background: transparent;
+}
+
+/* ======== Scroll bar CSS End ======= */
+
+
+/* Gallery Diamond */
+.diamond-grid{
+    width: 70%;
+    margin: 150px auto 0;
+}
+
+.item{
+    width: 220px;
+    height: 220px;
+    background: #000;
+    transition: 0.6s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 512px){
+    .img__logo img{
+        width: 100%;
+    }
+
+    header{
+        display: none;
+    }
+}
+
