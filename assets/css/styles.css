@@ -66,7 +66,7 @@ header .logo{
     font-weight: 700;
     color: rgb(255, 97, 124);
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s ease;
@@ -91,7 +91,7 @@ header ul li a{
     margin: 0 15px;
     text-decoration: none;
     color: rgb(255, 154, 171);
-    letter-spacing: 1px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     transition: 0.5s;
 }
@@ -115,6 +115,8 @@ header.sticky .logo{
     width: 50%;
     height: 100px;
 } */
+
+
 
 /* ========= Dropdown CSS ======== */
 .dropbtn {
@@ -187,18 +189,236 @@ header.sticky .logo{
 /* ======== Scroll bar CSS End ======= */
 
 
-/* Gallery Diamond */
+.heading{
+    font-weight: 800; color: rgb(255, 0, 43);
+}
+/* ========= Gallery Diamond CSS ============ */
 .diamond-grid{
-    width: 70%;
-    margin: 150px auto 0;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto 0;
 }
 
 .item{
     width: 220px;
     height: 220px;
-    background: #000;
+    background: pink;
+    
     transition: 0.6s;
 }
+
+.item img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(1.5);
+    width: 100%;
+}
+/* ========= Gallery Diamond CSS End ============ */
+
+/* ===== Footer CSS ======== */
+.footer-area{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #db7093;
+    background: -moz-linear-gradient(left,  #db7093 0%, #2cafe3 100%);
+    background: -webkit-linear-gradient(left,  #db7093 0%,#2cafe3 100%);
+    background: linear-gradient(to right,  #db7093 0%,#2cafe3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7093', endColorstr='#2cafe3',GradientType=1 );
+    position: relative;
+}
+
+.main{
+    width: 1400px;
+    margin: 0 auto;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.single-footer{
+    width: 290px;
+}
+
+.single-footer:first-child{
+    width: 400px;
+}
+
+.single-footer h4{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.single-footer h4:first-child{
+    font-weight: 600;
+}
+
+.footer-social{
+    margin-top: 20px;
+}
+
+.footer-social a{
+    color: rgb(255, 0, 43);
+    border: 1px solid rgb(255, 0, 43);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-social a:hover{
+    color: rgb(255, 250, 251);
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+
+.single-footer ul{
+    list-style: none;
+}
+
+.single-footer ul li{
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.single-footer ul li a{
+    color: rgb(255, 0, 43);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 501;
+}
+
+.single-footer ul li a:hover{
+    color: #fff;
+    transition: 0.6s ease;
+}
+
+.single-footer ul li a i{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.copy{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+/* .footer-wave-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    background-color: red;
+}
+
+.footer-wave{
+    background-image: url('/assets/img/footer-shape.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    background-size: 50%;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+.footer-animation{
+    animation: footer_wave 5s linear infinite;
+    -moz-animation: footer_wave 5s linear infinite;
+    -o-animation: footer_wave 5s linear infinite;
+    -webkit-animation: footer_wave 5s linear infinite;
+    left:auto;
+    right:0;
+}
+
+@keyframes footer_wave {
+    0%{
+        transform:translateX(0%);
+    }
+    50%{
+        transform:translateX(50%);
+    }
+    100%{
+        transform:translateX(100%);
+    }
+}
+
+@-moz-keyframes footer_wave{
+0%{
+    -moz-transform:translateX(0%);
+}
+50%{
+    -moz-transform:translateX(25%);
+}
+100%{
+    -moz-transform:translateX(50%);
+}
+}
+@-moz-keyframes footer_wave{
+0%{
+    -moz-transform:translateX(0%);
+}
+50%{
+    -moz-transform:translateX(25%);
+}
+100%{
+    -moz-transform:translateX(50%);
+}
+}
+
+@-o-keyframes footer_wave{
+0%{
+    -o-transform:translateX(0%);
+}
+50%{
+    -o-transform:translateX(25%);
+}
+100%{
+    -o-transform:translateX(50%);
+}
+}
+
+@-webkit-keyframes footer_wave{
+0%{
+    -webkit-transform:translateX(0%);
+}
+50%{
+    -webkit-transform:translateX(25%);
+}
+100%{
+    -webkit-transform:translateX(50%);
+}
+} */
+
+@media only screen and (max-width:600px){
+.main{
+    width:320px;
+}
+.footer-wave-box {
+    display: none;
+}
+.single-footer:first-child, .single-footer {
+    width: 100%;
+    margin-bottom:30px;
+}
+}
+
+/* ===== Footer CSS End ======== */
+
 
 /* Media Queries */
 @media screen and (max-width: 512px){
@@ -211,3 +431,8 @@ header.sticky .logo{
     }
 }
 
+@media screen and (max-width: 767px){
+    .diamond-grid{
+        margin: 0 auto;
+    }
+}
