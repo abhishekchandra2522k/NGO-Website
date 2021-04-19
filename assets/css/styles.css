@@ -41,7 +41,7 @@ body{
 /* === Header/Navbar CSS === */
 
 header {
-    background-image: url("/assets/img/7.jpg");
+    background-image: url("assets/img/7.jpg");
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -80,8 +80,8 @@ header {
 }
 
 nav {
-    font-family: 'Playfair Display',
-        serif;
+    font-family: 'Poppins',
+        sans-serif;
     align-self: stretch;
     flex-grow: 1;
     text-align: right;
@@ -92,9 +92,8 @@ nav {
     display: inline-block;
     position: relative;
     top: 40px;
-    padding: 0px 25px;
-    list-style: none;
-    
+    padding: 0px 9px;
+    list-style: none;  
 }
 
 nav a {
@@ -390,10 +389,6 @@ nav li {
 @media screen and (max-width: 512px){
     .img__logo img{
         width: 100%;
-    }
-
-    header{
-        display: none;
     }
 }
 
