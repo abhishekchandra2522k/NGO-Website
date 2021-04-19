@@ -32,176 +32,119 @@ html{
 }
 
 body{
-    background-color: rgb(253, 227, 231);
+    background-color: rgb(248, 248, 248);
     
     min-height: 200vh;
 }
 
 
 /* === Header/Navbar CSS === */
-/* header{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
+
+header {
+    background-image: url("/assets/img/7.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    /* transition-delay: 500ms; */
+
+}
+
+.header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    margin-bottom: 20px;
-    z-index: 999999;
-    background-color: #fff;
-    transition: 0.6s ease;
+    flex-wrap: wrap;
+
 }
 
-header.sticky{
-    position: fixed;
-    padding: 10px 30px;
-    background-color: rgb(253, 226, 230);
-    transition: 0.6s ease;
-}
-
-header .logo{
-    position: relative;
-    font-weight: 700;
-    color: rgb(255, 97, 124);
-    text-decoration: none;
-    font-size: 1.5em;
+.header>h1 {
+    font-size: 1em;
+    color: #fff;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s ease;
-}
-
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li{
-    position: relative;
-    list-style: none;
-    padding-top: 15px;
+    font-family: 'Playfair Display',
+        serif;
     font-weight: 700;
+    padding: 30px 50px;
+    text-align: center;
 }
 
-header ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: rgb(255, 154, 171);
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    transition: 0.5s;
+.header>h1>span {
+    display: block;
+    color: #fff;
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 9px;
+    text-transform: lowercase;
+    font-weight: 400;
 }
 
-header ul li a:hover{
-    text-decoration: none;
-    color: rgb(255, 89, 117);
-    transition: 0.5s ease;
+nav {
+    font-family: 'Playfair Display',
+        serif;
+    align-self: stretch;
+    flex-grow: 1;
+    text-align: right;
+    transition-duration: 300ms;
 }
 
-header.sticky ul li a{
-    margin-top: 5px;
-    color: rgb(255, 126, 148);
-}
-
-header.sticky .logo{
-    color: rgb(255, 97, 124);
-} */
-
-nav{
-    background: #0082e6;
-    height: 80px;
-    width: 100%;
-}
-
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
+.fullMenu ul li{
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    position: relative;
+    top: 40px;
+    padding: 0px 25px;
+    list-style: none;
+    
 }
 
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.4px;
 }
 
-a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
+nav li {
+    list-style-type: none;
+    padding: 10px 10px;
+    text-align: center;
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
+#collMenu, label[for='toggleMenu']{
     display: none;
 }
 
-#check{
-    display: none;
+.scrolledHeader {
+    position: fixed;
+    background-color: #000;
+    height: 60px;
+    width: 100%;
+    z-index: 999;
+    transition-duration: 400ms;
 }
 
-@media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
+.scrolledHeader nav {
+    position: relative;
+    top: -20px;
 }
 
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        /* background: none; */
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
+.scrolledHeader h1 {
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.scrolledHeader>h1>span {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    
+}
+
+.header>h1,
+.header>h1>span {
+    transition: 230ms;
 }
 
 
@@ -280,40 +223,65 @@ a.active,a:hover{
 .heading{
     font-weight: 800; color: rgb(255, 0, 43);
 }
-/* ========= Gallery Diamond CSS ============ */
-.diamond-grid{
+
+
+/* Portfolio CSS */
+
+.portfolio {
+    display: grid;
+    position: relative;
+    width: 95%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px 20px;
+    /* padding-bottom: 40px; */
+    margin: 0 auto;
+
+}
+
+.portfolio img {
     width: 100%;
-    text-align: center;
-    margin: 50px auto 0;
+    overflow: hidden;
+
 }
 
-.item{
-    width: 220px;
-    height: 220px;
-    background: pink;
-    
-    transition: 0.6s;
+.mega {
+    grid-column: 2/4;
+    grid-row: 2/4;
 }
 
-.item img{
+.album {
+    position: relative;
+}
+
+.albumTitle {
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) scale(1.5);
     width: 100%;
+    top: 40%;
 }
-/* ========= Gallery Diamond CSS End ============ */
+
+.hideText {
+    display: none;
+}
+
+.hideText h2,
+.hideText p {
+    color: red;
+
+}
+
+/* Portfolio CSS */
+
 
 /* ===== Footer CSS ======== */
 .footer-area{
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 20px;
-    background: #db7093;
-    background: -moz-linear-gradient(left,  #db7093 0%, #2cafe3 100%);
-    background: -webkit-linear-gradient(left,  #db7093 0%,#2cafe3 100%);
-    background: linear-gradient(to right,  #db7093 0%,#2cafe3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7093', endColorstr='#2cafe3',GradientType=1 );
+    background: -moz-linear-gradient(left,  rgba(229,112,231,0.8) 0%, rgba(200,94,199,0.78) 47%, rgba(168,73,163,0.76) 100%);
+    background: -webkit-linear-gradient(left,  rgba(229,112,231,0.8) 0%,rgba(200,94,199,0.78) 47%,rgba(168,73,163,0.76) 100%);
+    background: linear-gradient(to right,  rgba(229,112,231,0.8) 0%,rgba(200,94,199,0.78) 47%,rgba(168,73,163,0.76) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce570e7', endColorstr='#c2a849a3',GradientType=1 );
     position: relative;
 }
 
@@ -402,96 +370,6 @@ a.active,a:hover{
     margin-top: 50px;
 }
 
-/* .footer-wave-box{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 50px;
-    background-color: red;
-}
-
-.footer-wave{
-    background-image: url('/assets/img/footer-shape.png');
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200%;
-    height: 100%;
-    background-size: 50%;
-    background-position: bottom;
-    background-repeat: repeat-x;
-    overflow: hidden;
-}
-
-.footer-animation{
-    animation: footer_wave 5s linear infinite;
-    -moz-animation: footer_wave 5s linear infinite;
-    -o-animation: footer_wave 5s linear infinite;
-    -webkit-animation: footer_wave 5s linear infinite;
-    left:auto;
-    right:0;
-}
-
-@keyframes footer_wave {
-    0%{
-        transform:translateX(0%);
-    }
-    50%{
-        transform:translateX(50%);
-    }
-    100%{
-        transform:translateX(100%);
-    }
-}
-
-@-moz-keyframes footer_wave{
-0%{
-    -moz-transform:translateX(0%);
-}
-50%{
-    -moz-transform:translateX(25%);
-}
-100%{
-    -moz-transform:translateX(50%);
-}
-}
-@-moz-keyframes footer_wave{
-0%{
-    -moz-transform:translateX(0%);
-}
-50%{
-    -moz-transform:translateX(25%);
-}
-100%{
-    -moz-transform:translateX(50%);
-}
-}
-
-@-o-keyframes footer_wave{
-0%{
-    -o-transform:translateX(0%);
-}
-50%{
-    -o-transform:translateX(25%);
-}
-100%{
-    -o-transform:translateX(50%);
-}
-}
-
-@-webkit-keyframes footer_wave{
-0%{
-    -webkit-transform:translateX(0%);
-}
-50%{
-    -webkit-transform:translateX(25%);
-}
-100%{
-    -webkit-transform:translateX(50%);
-}
-} */
-
 @media only screen and (max-width:600px){
 .main{
     width:320px;
@@ -508,7 +386,7 @@ a.active,a:hover{
 /* ===== Footer CSS End ======== */
 
 
-/* Media Queries */
+/*========== Media Queries =======*/
 @media screen and (max-width: 512px){
     .img__logo img{
         width: 100%;
@@ -523,4 +401,174 @@ a.active,a:hover{
     .diamond-grid{
         margin: 0 auto;
     }
+}
+
+@media only screen and (max-width: 1690px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 980px) {
+
+    .container>div {
+        padding: 40px;
+    }
+
+    #services {
+        padding-top: 45px;
+    }
+
+    .serviceBox {
+        width: 100%;
+        height: 400px;
+    }
+
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px 15px;
+    }
+
+    .portfolio img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mega {
+        display: none;
+    }
+
+
+    .blog {
+        width: 90%;
+        padding: 0;
+    }
+
+    .packageImg img {
+        width: 25%;
+        height: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 736px) {
+
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        padding: 0;
+    }
+
+    .header h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header{
+        background-color: #000;
+        z-index: 9999999;
+        position: relative;
+    }
+
+    .fullMenu {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .scrolledHeader nav {
+        top: 0px;
+        background-color: #000;
+    }
+
+    #toggleMenu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+    }
+
+    /* hide after you style */
+
+    #collMenu {
+        display: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        /* background-color: #000; */
+        background-color: inherit;
+    }
+
+    label[for='toggleMenu'] {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+    }
+
+    .reviews {
+        display: block;  
+    }
+
+    .testimonial {
+        margin: 60px 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container > div {
+        padding: 40px 10px;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+    .title>h1 {
+        width: 100%;
+        font-size: 26px;
+        letter-spacing: 0px;
+        line-height: 1.2em;
+    }
+
+    .title>h2 {
+        line-height: 1.2em;
+    }
+
+    .title p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .serviceBox {
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .blog p {
+        column-count: 1;
+    }
+
+    .packagePrice>div {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .parallaxOne, .parallaxTwo {
+        display: none;
+    }
+
+
+
 }
