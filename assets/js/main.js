@@ -42,3 +42,37 @@ document.addEventListener('DOMContentLoaded', function(event){
         
 
 });
+
+// document.getElementById('close').addEventListener('click', bottomClose());
+function bottomClose(){
+    document.getElementById('bottom').style.display = 'none';
+}
+
+
+var clickControl = true;
+function headerColor(){
+    if(clickControl){
+        document.getElementById('header').style.backgroundColor = "black";
+        clickControl = !clickControl;
+    }else{
+        document.getElementById('header').style.backgroundColor = "transparent";
+        clickControl = !clickControl;
+    }
+}
+
+
+// function show()
+// {
+//     if(clickControl)
+//     {
+//         var elem = document.getElementById("pop").querySelector('li:nth-child(3)');
+//         elem.style.width = "500px";
+//         clickControl = !clickControl;
+//     }
+//     else
+//     {
+//         var elem = document.getElementById("pop").querySelector('li:nth-child(3)');
+//         elem.style.width = "200px";
+//         clickControl = !clickControl;
+//     }
+// }
