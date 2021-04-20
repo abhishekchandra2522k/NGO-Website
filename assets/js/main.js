@@ -46,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function(event){
 // document.getElementById('close').addEventListener('click', bottomClose());
 function bottomClose(){
     document.getElementById('bottom').style.display = 'none';
+    document.getElementById('bottom').style.transition = .6;
+    document.getElementById('footer-b').style.bottom = 0;
 }
 
 
@@ -60,19 +62,41 @@ function headerColor(){
     }
 }
 
+var btn = document.getElementsByClassName("btn-test");
+var slide = document.getElementById("slide-test");
 
-// function show()
-// {
-//     if(clickControl)
-//     {
-//         var elem = document.getElementById("pop").querySelector('li:nth-child(3)');
-//         elem.style.width = "500px";
-//         clickControl = !clickControl;
-//     }
-//     else
-//     {
-//         var elem = document.getElementById("pop").querySelector('li:nth-child(3)');
-//         elem.style.width = "200px";
-//         clickControl = !clickControl;
-//     }
-// }
+btn[0].onclick = function(){
+    slide.style.transform = "translateX(0px)";
+    for(i=0;i<4;i++){
+        btn[i].classList.remove("active-test");
+    }
+    this.classList.add("active-test");
+}
+btn[1].onclick = function(){
+    slide.style.transform = "translateX(-640px)";
+    for(i=0;i<4;i++){
+        btn[i].classList.remove("active-test");
+    }
+    this.classList.add("active-test");
+}
+btn[2].onclick = function(){
+    slide.style.transform = "translateX(-1280px)";
+    for(i=0;i<4;i++){
+        btn[i].classList.remove("active-test");
+    }
+    this.classList.add("active-test");
+}
+btn[3].onclick = function(){
+    slide.style.transform = "translateX(-1920px)";
+    for(i=0;i<4;i++){
+        btn[i].classList.remove("active-test");
+    }
+    this.classList.add("active-test");
+}
+btn[4].onclick = function(){
+    slide.style.transform = "translateX(-2560px)";
+    for(i=0;i<4;i++){
+        btn[i].classList.remove("active-test");
+    }
+    this.classList.add("active-test");
+}
