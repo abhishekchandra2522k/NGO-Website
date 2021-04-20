@@ -32,7 +32,7 @@ html{
 }
 
 body{
-    background-color: rgb(248, 248, 248);
+    background-color: white;
     
     min-height: 200vh;
 }
@@ -41,7 +41,7 @@ body{
 /* === Header/Navbar CSS === */
 
 header {
-    background-image: url("/assets/img/9.jpg");
+    background-image: url("/assets/img/med.jpg");
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -53,6 +53,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     /* background-color: #000; */
+    transition: .4s ease-in;
 }
 
 .header>h1 {
@@ -117,11 +118,11 @@ nav li {
 
 .scrolledHeader {
     position: fixed;
-    background-color: #000;
+    background-color: pink;
     height: 100px;
     width: 100%;
     z-index: 999;
-    transition-duration: 400ms;
+    transition-duration: 600ms;
 }
 
 .scrolledHeader nav {
@@ -132,7 +133,7 @@ nav li {
 }
 
 .scrolledHeader h1 {
-    padding: 36px 50px;
+    padding: 28px 50px;
     text-align: center;
     font-size: 1.2em;
 }
@@ -201,7 +202,7 @@ nav li {
 
 ::-webkit-scrollbar{
     width: 8px;
-    background: transparent;
+    background: pink;
   }
   
 ::-webkit-scrollbar-track{
@@ -226,6 +227,7 @@ nav li {
     background-color: #000;
     width: 100%;
     z-index: 99999999;
+    transition: 0.6s ease;
 }
 
 .bottom p{
@@ -233,6 +235,7 @@ nav li {
     /* width: 80px; */
     padding: 26px 5rem;
     width: 100%;
+    /* font-size: 800;  */
 }
 
 .bottom i{
@@ -247,7 +250,7 @@ nav li {
 }
 
 
-/* Portfolio CSS */
+/* ============= Portfolio CSS ========== */
 
 .portfolio {
     display: grid;
@@ -292,12 +295,119 @@ nav li {
 
 }
 
-/* Portfolio CSS */
+/* ================= Portfolio CSS End ===============*/
+
+/* ========== Bottom Fixed CSS ===========*/
+.voltour{
+    padding: 4px 8px;
+    background-color: pink;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.voltour:hover{
+    background-color: rgb(252, 138, 157);
+    transition: 0.6s ease;
+}
+/* ======== Bottom Fixed CSS End =======*/
 
 
+.hero{
+    background: #ff676d;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.6s ease;
+}
+
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    /* height: 100%; */
+    border-radius: 15rem;
+}
+
+.user-text{
+    background: #2d3a59;
+    width: 520px;
+    height: 330px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    padding: 45px;
+    box-sizing: border-box;
+    /* z-index: 2; */
+}
+
+.user-text p{
+    margin: -8px 0 19px;
+    color: #fff;
+}
+
+.container-test{
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+.btn-test{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.active-test{
+    width: 45px;
+}
+
+.testimonials{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 /* ===== Footer CSS ======== */
 .footer-area{
-    margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 20px;
     background: -moz-linear-gradient(left,  rgba(255,0,132,0.88) 0%, rgba(226,149,221,0.95) 59%, rgba(226,149,221,1) 100%);
@@ -322,10 +432,12 @@ nav li {
 
 .single-footer{
     width: 290px;
+    padding-right: 20px;
 }
 
 .single-footer:first-child{
     width: 400px;
+    margin-left: 60px;
 }
 
 .single-footer h4{
