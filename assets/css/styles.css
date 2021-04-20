@@ -41,7 +41,7 @@ body{
 /* === Header/Navbar CSS === */
 
 header {
-    background-image: url("assets/img/7.jpg");
+    background-image: url("/assets/img/9.jpg");
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -52,7 +52,7 @@ header {
 .header {
     display: flex;
     flex-wrap: wrap;
-
+    /* background-color: #000; */
 }
 
 .header>h1 {
@@ -118,7 +118,7 @@ nav li {
 .scrolledHeader {
     position: fixed;
     background-color: #000;
-    height: 60px;
+    height: 100px;
     width: 100%;
     z-index: 999;
     transition-duration: 400ms;
@@ -127,10 +127,12 @@ nav li {
 .scrolledHeader nav {
     position: relative;
     top: -20px;
+    padding: 18px 10px;
+    transition: 0.6s ease;
 }
 
 .scrolledHeader h1 {
-    padding: 10px 50px;
+    padding: 36px 50px;
     text-align: center;
     font-size: 1.2em;
 }
@@ -199,6 +201,7 @@ nav li {
 
 ::-webkit-scrollbar{
     width: 8px;
+    background: transparent;
   }
   
 ::-webkit-scrollbar-track{
@@ -207,9 +210,7 @@ nav li {
 }
   
 ::-webkit-scrollbar-thumb{
-    background: url('assets/img/1.jpg');
     background-color: var(--first-color);
-    border-radius: 8px;
 }
   
 ::-webkit-scrollbar-track-piece:vertical:end{
@@ -218,6 +219,28 @@ nav li {
 
 /* ======== Scroll bar CSS End ======= */
 
+.bottom{
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    background-color: #000;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.bottom p{
+    color: #fff;
+    /* width: 80px; */
+    padding: 26px 5rem;
+    width: 100%;
+}
+
+.bottom i{
+    float: right;
+    font-size: 20px;
+    /* margin-right: 20px; */
+    cursor: pointer;
+}
 
 .heading{
     font-weight: 800; color: rgb(255, 0, 43);
@@ -277,17 +300,19 @@ nav li {
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 20px;
-    background: -moz-linear-gradient(left,  rgba(229,112,231,0.8) 0%, rgba(200,94,199,0.78) 47%, rgba(168,73,163,0.76) 100%);
-    background: -webkit-linear-gradient(left,  rgba(229,112,231,0.8) 0%,rgba(200,94,199,0.78) 47%,rgba(168,73,163,0.76) 100%);
-    background: linear-gradient(to right,  rgba(229,112,231,0.8) 0%,rgba(200,94,199,0.78) 47%,rgba(168,73,163,0.76) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce570e7', endColorstr='#c2a849a3',GradientType=1 );
+    background: -moz-linear-gradient(left,  rgba(255,0,132,0.88) 0%, rgba(226,149,221,0.95) 59%, rgba(226,149,221,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(255,0,132,0.88) 0%,rgba(226,149,221,0.95) 59%,rgba(226,149,221,1) 100%);
+    background: linear-gradient(to right,  rgba(255,0,132,0.88) 0%,rgba(226,149,221,0.95) 59%,rgba(226,149,221,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0ff0084', endColorstr='#e295dd',GradientType=1 );
     position: relative;
+    bottom: 9vh;
 }
 
 .main{
     width: 100%;
     margin: 0 auto;
 }
+
 .footer{
     display: flex;
     justify-content: space-around;
@@ -466,7 +491,7 @@ nav li {
     }
 
     .header{
-        background-color: #000;
+        background-color: transparent;
         z-index: 9999999;
         position: relative;
     }
