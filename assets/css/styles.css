@@ -100,10 +100,16 @@ nav {
 nav a {
     text-decoration: none;
     text-transform: capitalize;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 1.4px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .4s ease;
 }
 
 nav li {
@@ -122,14 +128,14 @@ nav li {
     height: 100px;
     width: 100%;
     z-index: 999;
-    transition-duration: 600ms;
+    transition-duration: 400ms;
 }
 
 .scrolledHeader nav {
     position: relative;
     top: -20px;
     padding: 18px 10px;
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 
 .scrolledHeader h1 {
@@ -227,7 +233,7 @@ nav li {
     background-color: #000;
     width: 100%;
     z-index: 99999999;
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 
 .bottom p{
@@ -308,7 +314,7 @@ nav li {
 
 .voltour:hover{
     background-color: rgb(252, 138, 157);
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 /* ======== Bottom Fixed CSS End =======*/
 
@@ -330,7 +336,7 @@ nav li {
 .slide-row{
     display: flex;
     width: 3200px;
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 
 .slide-col{
@@ -360,7 +366,8 @@ nav li {
     top: 50%;
     transform: translateY(-50%);
     border-radius: 10px;
-    padding: 45px;
+    padding: 31px;
+    padding-right: 99px;
     box-sizing: border-box;
     /* z-index: 2; */
 }
@@ -394,7 +401,7 @@ nav li {
     border-radius: 15px;
     background: #fff;
     cursor: pointer;
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 
 .active-test{
@@ -410,10 +417,8 @@ nav li {
 .footer-area{
     padding-top: 50px;
     padding-bottom: 20px;
-    background: -moz-linear-gradient(left,  rgba(255,0,132,0.88) 0%, rgba(226,149,221,0.95) 59%, rgba(226,149,221,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(255,0,132,0.88) 0%,rgba(226,149,221,0.95) 59%,rgba(226,149,221,1) 100%);
-    background: linear-gradient(to right,  rgba(255,0,132,0.88) 0%,rgba(226,149,221,0.95) 59%,rgba(226,149,221,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0ff0084', endColorstr='#e295dd',GradientType=1 );
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,53,91,1) 0%, rgba(0,212,255,1) 100%);
     position: relative;
     bottom: 9vh;
 }
@@ -433,6 +438,7 @@ nav li {
 .single-footer{
     width: 290px;
     padding-right: 20px;
+    color: #fff;
 }
 
 .single-footer:first-child{
@@ -444,6 +450,7 @@ nav li {
     text-transform: capitalize;
     font-size: 22px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .single-footer h4:first-child{
@@ -455,8 +462,8 @@ nav li {
 }
 
 .footer-social a{
-    color: rgb(255, 0, 43);
-    border: 1px solid rgb(255, 0, 43);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -467,9 +474,9 @@ nav li {
 }
 
 .footer-social a:hover{
-    color: rgb(255, 250, 251);
-    border: 1px solid #fff;
-    transition: 0.6s ease;
+    color: rgb(250, 121, 121);
+    border: 1px solid rgb(250, 121, 121);
+    transition: 0.4s ease;
 }
 
 .single-footer ul{
@@ -483,15 +490,15 @@ nav li {
 }
 
 .single-footer ul li a{
-    color: rgb(255, 0, 43);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 15px;
     font-weight: 501;
 }
 
 .single-footer ul li a:hover{
-    color: #fff;
-    transition: 0.6s ease;
+    color: rgb(250, 121, 121);
+    transition: 0.4s ease;
 }
 
 .single-footer ul li a i{

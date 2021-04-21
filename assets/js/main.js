@@ -95,8 +95,8 @@ btn[3].onclick = function(){
 }
 btn[4].onclick = function(){
     slide.style.transform = "translateX(-2560px)";
-    for(i=0;i<4;i++){
+    for(i=0;i<=4;i++){
         btn[i].classList.remove("active-test");
     }
-    this.classList.add("active-test");
+    // this.classList.add("active-test");
 }
