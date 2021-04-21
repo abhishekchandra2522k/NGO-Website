@@ -569,6 +569,14 @@ nav li {
 
 /* ===== Footer CSS End ======== */
 
+.parallaxOne{
+    background-image: url("/assets/img/g4.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 
 /*========== Media Queries =======*/
 @media screen and (max-width: 512px){
