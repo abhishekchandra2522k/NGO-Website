@@ -100,3 +100,6 @@ btn[4].onclick = function(){
     }
     // this.classList.add("active-test");
 }
+
+
+$(".num").counterUp({delay:10,time:1000})
