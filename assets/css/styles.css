@@ -230,7 +230,7 @@ nav li {
     position: fixed;
     bottom: 0;
     height: 10vh;
-    background-color: #000;
+    background-color: green;
     width: 100%;
     z-index: 99999999;
     transition: 0.4s ease;
