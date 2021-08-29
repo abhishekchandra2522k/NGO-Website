@@ -29,11 +29,12 @@
 
 html{
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body{
     background-color: white;
-    
+    width: 100%;
     min-height: 200vh;
 }
 
@@ -45,8 +46,13 @@ header {
     background-position: center;
     background-size: cover;
     height: 30vh;
+    width: 100%;
     /* transition-delay: 500ms; */
 
+}
+
+.header img{
+    padding: 1rem;
 }
 
 .header {
@@ -99,10 +105,10 @@ nav {
 
 nav a {
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: rgb(0, 0, 0);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 1.4px;
 }
 
@@ -124,7 +130,7 @@ nav li {
 
 .scrolledHeader {
     position: fixed;
-    background-color: pink;
+    background-color: orange;
     height: 100px;
     width: 100%;
     z-index: 999;
@@ -272,7 +278,7 @@ nav li {
 .portfolio img {
     width: 100%;
     overflow: hidden;
-
+    height: 100%;
 }
 
 .mega {
@@ -302,6 +308,47 @@ nav li {
 }
 
 /* ================= Portfolio CSS End ===============*/
+
+/* About US */
+.about__section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: -2rem;
+}
+
+.about__section_div{
+    background: url('/assets/img/about.jpg') no-repeat left;
+    background-size: 55%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 10rem 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: rgb(255, 220, 226);
+    padding: 50px;
+    margin-right: 30px;
+}
+
+.inner-container .text{
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 13px;
+}
 
 /* ========== Bottom Fixed CSS ===========*/
 .voltour{
@@ -624,6 +671,7 @@ nav li {
     .portfolio img {
         width: 100%;
         overflow: hidden;
+        height: 100%;
     }
 
     .mega {
